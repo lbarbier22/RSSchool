@@ -1,9 +1,25 @@
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: -10px;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.links{
+  display: block;
+  color: white;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-size: larger;
 }
 
 li {
@@ -12,14 +28,7 @@ li {
   margin-right: 20px; 
   float: right;
 }
-  
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+
 
 li a:hover {
   background-color: #ddd; 
