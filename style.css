@@ -100,7 +100,10 @@ li {
 .banner {
   background-color: #f4e49b;
   text-align: center;
-  padding: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
   margin-top: 60px;
 }
 
@@ -211,6 +214,19 @@ button:hover {
   font-size: 160%;
 }
 
+.div3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  padding-left: 6%;
+  padding-top: 6%;
+  padding-bottom: 3%;
+  text-decoration: none;
+  font-size: 160%;
+  background-color: #2B421F;
+  color: #EDE7B0;
+}
 
 .container {
   max-width: 600px;
