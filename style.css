@@ -9,7 +9,7 @@ body{
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: #3E6329;
+  background-color: #283719;
   z-index: 1000000000;
 }
 
@@ -131,15 +131,6 @@ li {
   font-size: 140%;
 }
 
-.par1{
-  align-items: center;
-  font-family: "Lato", sans-serif;
-  margin-left: 8%;
-  margin-top: 15%;
-  text-decoration: none;
-  font-size: 160%;
-}
-
 button{
   width: fit-content;
   align-items: center;
@@ -164,7 +155,34 @@ button:hover{
   background-color: #3B4D2F; 
 }
 
-.img_header{
+.row1{
+  display: flex;
+  background-color: #283719;
+  border-radius: 6%;
+
+}
+
+.img1{
+  width: 180%;
+  height: fit-content;
+  margin-top: 10%;
+  margin-right: 100px;
+  border-radius: 6%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img1:hover{
+  transform: scale(1.05);
+}
+
+.par1{
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-size: 160%;
+}
+
+.img2{
   width: 100%;
   height: fit-content;
   margin-top: 10%;
@@ -173,8 +191,17 @@ button:hover{
   transition: transform 0.3s ease-in-out;
 }
 
-.img_header:hover{
+.img2:hover{
   transform: scale(1.05);
+}
+
+.par2{
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  margin-left: 8%;
+  margin-top: 15%;
+  text-decoration: none;
+  font-size: 160%;
 }
 
 
