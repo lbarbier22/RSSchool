@@ -116,9 +116,53 @@
     </div>
   </div>
 
-  <div class="">
-    <h1 class="">Quote of the day: live life</h1>
-  </div>
+  <div class="container">
+    <h2>Nous contactez</h2>
+    <form id="contactForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Nom Prénom</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Société</label>
+                <input type="text" id="company" name="company">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy" style="margin-top: 5px;">J'accepte la politique de confidentialité.*</label>
+          </div>
+        </div>
+
+        <p class="note">* J'accepte que les informations saisies dans ce formulaire soient utilisées par l'équipe d'Aria Agency pour me recontacter si nécessaire. En aucun cas elles ne seront transmises à des tiers ou utilisées à des fins de démarchage.</p>
+
+        <button type="submit" class="button">Envoyer</button>
+    </form>
+</div>
 
   <!-- Footer -->
   <footer class="">
@@ -132,6 +176,7 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
