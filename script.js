@@ -1,5 +1,5 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Empêche l'envoi réel du formulaire
+    event.preventDefault();
 
     const name = document.getElementById('name').value;
     const company = document.getElementById('company').value;
