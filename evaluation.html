@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Evaluation</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="evaluation.css">
+</head>
+
+<body>
+    <h1>Formulaire d'auto-évaluation</h1>
+
+    <form id="form">
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <input type="text" id="name" placeholder="Enter your name" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <input type="email" id="email" placeholder="Enter your email" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <input type="text" id="age" placeholder="Enter your age" required/>
+        </div>
+
+        <div class="formulaire">
+            <div class="form-control">
+                <label class="axe_question"><h2>AXE SOCIAL</h2></label>
+                <div class="input_formulaire">
+                    <h4>Favoriser le bien être et la qualité de vie de tous</h4>
+                    <div class="question">
+                        <a>Des actions sont-elles en place pour promouvoir la santé mentale des étudiants et du personnel ?</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_social_question1" value="oui">oui</label>
+                            <label><input type="radio" name="axe_social_question1" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Des campagnes de sensibilisation sont-elles mises en place régulièrement ?</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_social_question2" value="oui">oui</label>
+                            <label><input type="radio" name="axe_social_question2" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_formulaire">
+                    <h4>Développer l'engagement et la solidarité</h4>
+                    <div class="question">
+                        <a>Le campus participe-t'il à des collectes ou des dons envers des organismes sociaux ?</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_social_question3" value="oui">oui</label>
+                            <label><input type="radio" name="axe_social_question3" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Participation à des événements locaux ?</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_social_question4" value="oui">oui</label>
+                            <label><input type="radio" name="axe_social_question4" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_formulaire">
+                    <h4>Promouvoir la diversité, l'égalité des chances et l'inclusivité à tous les niveaux</h4>
+                    <div class="question">
+                        <a>Favoriser l'insertion des personnes en situation de handicap (accès PMR suffisants et agréables)</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_social_question5" value="oui">oui</label>
+                            <label><input type="radio" name="axe_social_question5" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Intégrer des personnes en situation d'exclusion</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_social_question6" value="oui">oui</label>
+                            <label><input type="radio" name="axe_social_question6" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label class="axe_question"><h2>AXE ENVIRONNEMENTAL</h2></label>
+                <div class="input_formulaire">
+                    <h4>Maîtriser les consommations d'énergie, d'eau et de matières premières</h4>
+                    <div class="question">
+                        <a>Promouvoir le télétravail, former les étudiants aux éco-gestes et bannir les plastiques à usage unique.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_environnemental_question1" value="oui">oui</label>
+                            <label><input type="radio" name="axe_environnemental_question1" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Proposer des ateliers pour apprendre à adopter des comportements plus respectueux de l'environnement.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_environnemental_question2" value="oui">oui</label>
+                            <label><input type="radio" name="axe_environnemental_question2" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_formulaire">
+                    <h4>Réduire les émissions dans l'air, les sols et l'eau</h4>
+                    <div class="question">
+                        <a>Créer des zones naturelles pour améliorer la qualité de l'air et le bien-être des étudiants.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_environnemental_question3" value="oui">oui</label>
+                            <label><input type="radio" name="axe_environnemental_question3" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Encourager l'utilisation de moyens de transport non polluants comme le vélo ou la trottinette en mettant à disposition des infrastructures adaptées.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_environnemental_question4" value="oui">oui</label>
+                            <label><input type="radio" name="axe_environnemental_question4" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_formulaire">
+                    <h4>Favoriser la réduction et la valorisation des déchets</h4>
+                    <div class="question">
+                        <a>Mettre en place des systèmes de tri efficaces, favoriser le compostage et réduire drastiquement l'utilisation du plastique</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_environnemental_question5" value="oui">oui</label>
+                            <label><input type="radio" name="axe_environnemental_question5" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Simplifier et améliorer le tri pour réduire le gaspillage.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_environnemental_question6" value="oui">oui</label>
+                            <label><input type="radio" name="axe_environnemental_question6" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label class="axe_question"><h2>AXE ECONOMIQUE</h2></label>
+                <div class="input_formulaire">
+                    <h4>Assurer la viabilité financière du campus</h4>
+                    <div class="question">
+                        <a>Garantir un équilibre budgétaire et une gestion durable des ressources financières.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_economique_question1" value="oui">oui</label>
+                            <label><input type="radio" name="axe_economique_question1" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Mettre en place une stratégie financière à long terme pour soutenir les investissements en infrastructures et innovations.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_economique_question2" value="oui">oui</label>
+                            <label><input type="radio" name="axe_economique_question2" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_formulaire">
+                    <h4>Encourager des pratiques d'achats responsables</h4>
+                    <div class="question">
+                        <a>Favoriser l'achat de produits locaux et durables auprès de fournisseurs responsables.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_economique_question3" value="oui">oui</label>
+                            <label><input type="radio" name="axe_economique_question3" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Veiller à respecter la législation sur le travail et assurer une rémunération juste pour les travailleurs.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_economique_question4" value="oui">oui</label>
+                            <label><input type="radio" name="axe_economique_question4" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label class="axe_question"><h2>AXE LOCAL</h2></label>
+                <div class="input_formulaire">
+                    <h4>Favoriser l'intégration locale</h4>
+                    <div class="question">
+                        <a>Intégrer les acteurs locaux dans le développement du campus.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_local_question1" value="oui">oui</label>
+                            <label><input type="radio" name="axe_local_question1" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Mettre en place des projets collaboratifs avec les entreprises locales.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_local_question2" value="oui">oui</label>
+                            <label><input type="radio" name="axe_local_question2" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_formulaire">
+                    <h4>Encourager les partenariats</h4>
+                    <div class="question">
+                        <a>Développer des relations de proximité avec les acteurs locaux (associations, communes, entreprises).</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_local_question3" value="oui">oui</label>
+                            <label><input type="radio" name="axe_local_question3" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Participer à des événements culturels ou sportifs locaux.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_local_question4" value="oui">oui</label>
+                            <label><input type="radio" name="axe_local_question4" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label class="axe_question"><h2>AXE DE LA GOUVERNANCE</h2></label>
+                <div class="input_formulaire">
+                    <h4>Favoriser une gouvernance éthique et participative</h4>
+                    <div class="question">
+                        <a>Encourager la participation des étudiants dans les prises de décisions.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_gouvernance_question1" value="oui">oui</label>
+                            <label><input type="radio" name="axe_gouvernance_question1" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Assurer la transparence des décisions et des actions menées par l'établissement.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_gouvernance_question2" value="oui">oui</label>
+                            <label><input type="radio" name="axe_gouvernance_question2" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_formulaire">
+                    <h4>Mettre en place des mécanismes de contrôle et d'évaluation</h4>
+                    <div class="question">
+                        <a>Évaluer régulièrement l'impact des actions menées sur le campus.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_gouvernance_question3" value="oui">oui</label>
+                            <label><input type="radio" name="axe_gouvernance_question3" value="non">non</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a>Recueillir et analyser les retours des étudiants et du personnel pour améliorer les pratiques de gouvernance.</a>
+                        <div class="div_oui_non">
+                            <label><input type="radio" name="axe_gouvernance_question4" value="oui">oui</label>
+                            <label><input type="radio" name="axe_gouvernance_question4" value="non">non</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div class="form-control">
+            <div class="div_commentaire" id="div_commentaire">
+                <label for="comment">Any comments or suggestions</label>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+            </div>
+        </div>
+        <div class="div_submit">
+            <button type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="evaluation.js"></script>
+</body>
+
+</html>
