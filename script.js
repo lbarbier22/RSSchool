@@ -17,3 +17,32 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     document.getElementById('contactForm').reset();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            const targetHref = this.getAttribute('href');
+
+            if (targetHref === 'evaluation.html') {
+                return;
+            }
+
+            if (targetHref.startsWith('#')) {
+                e.preventDefault();
+                const targetId = targetHref.substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+});
+
+
+
