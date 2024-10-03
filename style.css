@@ -81,7 +81,6 @@ li {
 }
 
 .column {
-  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -155,18 +154,14 @@ button:hover{
   background-color: #3B4D2F; 
 }
 
-.row1{
-  display: flex;
-  background-color: #283719;
-  border-radius: 6%;
-
-}
-
 .img1{
-  width: 180%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  right: 100px;
+  width: 50%;
   height: fit-content;
-  margin-top: 10%;
-  margin-right: 100px;
+  top: 10px;
   border-radius: 6%;
   transition: transform 0.3s ease-in-out;
 }
@@ -176,10 +171,18 @@ button:hover{
 }
 
 .par1{
-  align-items: center;
+  position: absolute;
+  left: 640px;
+  bottom: 100px;
+  z-index: -1;
   font-family: "Lato", sans-serif;
   text-decoration: none;
   font-size: 160%;
+  color: white;
+  padding: 3%;
+  background-color: #283719;
+  border-radius: 30px;
+  width: 50%;
 }
 
 .img2{
@@ -196,7 +199,7 @@ button:hover{
 }
 
 .par2{
-  align-items: center;
+  align-items:end;
   font-family: "Lato", sans-serif;
   margin-left: 8%;
   margin-top: 15%;
