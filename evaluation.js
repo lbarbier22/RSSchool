@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formulaire = document.querySelector('.formulaire');
-    const commentField = document.getElementById('comment');
+    const divComment = document.getElementById('div_commentaire')
     formulaire.style.display = 'none';
-    commentField.style.display = 'none';
+    divComment.style.display = 'none'
 
     const submitButton = document.querySelector('.div_submit button');
     let formState = 0;
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('label-age').style.display = 'none';
 
             formulaire.style.display = 'block';
-            commentField.style.display = 'block';
+            divComment.style.display = 'block';
 
             formState = 1;
 
