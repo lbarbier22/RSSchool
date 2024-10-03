@@ -1,11 +1,3 @@
-ul {
-  list-style-type: none;
-  margin: -10px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
 .logo{
   width: 60px;
   height: 60px;
@@ -14,12 +6,35 @@ ul {
   display: block;
 }
 
+.logo_header{
+  width: 60%;
+}
+
+.column {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+}
+
 .links{
   display: block;
   color: white;
   padding: 30px 16px;
   text-decoration: none;
   font-size: larger;
+}
+
+ul {
+  list-style-type: none;
+  margin: -10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 li {
@@ -33,4 +48,29 @@ li {
 li a:hover {
   background-color: #ddd; 
   color: black; 
+}
+
+h2{
+  font-family: "Lato", sans-serif;
+  padding: 6%;
+  text-decoration: none;
+}
+
+body,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif
+}
+
+h1,
+button {
+  font-family: "Montserrat", sans-serif
+}
+
+.fa-anchor,
+.fa-coffee {
+  font-size: 200px
 }
