@@ -336,6 +336,74 @@ button:hover {
   margin-top: 10px;
 }
 
+footer {
+  background-color: #2B421F;
+  color: #d0d0ce;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer_logo {
+  margin-bottom: 20px;
+}
+
+.footer_logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer_logo span {
+  font-size: 14px;
+  display: block;
+}
+
+.footer_links {
+  margin-bottom: 20px;
+}
+
+.footer_links a {
+  color: #d0d0ce;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .logo,
+  .footer_links,
+  .contact {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .footer_links a {
+      margin-right: 10px;
+  }
+}
+
 @keyframes linenavbar {
   0% {
     background-position: 200% 0;
