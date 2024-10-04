@@ -118,9 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.innerHTML = `
                 <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
                     <h1 style="color: #04AA6D;">Votre note est :</h1>
-                    <h2 style="font-size: 2em;">${grade}</h2>
+                    <h2 style="font-size: 2em; color : #EDE7B0;">${grade}</h2>
                     <img src="img/${logoSrc}.png" alt="Logo ${grade}" style="width: 200px; height: auto;"/>
-                    <p>Merci d'avoir complété l'évaluation.</p>
+                    <p style="color: #EDE7B0;">Merci d'avoir complété l'évaluation.</p>
                     <button onclick="window.location.reload();" style="padding: 10px 20px; font-size: 16px; background-color: #04AA6D; color: white; border: none; border-radius: 5px; cursor: pointer;">Réessayer</button>
                 </div>
             `;
