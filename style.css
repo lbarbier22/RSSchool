@@ -163,7 +163,6 @@ button:hover {
   flex-direction: column;
   right: 50px;
   width: 55%;
-  height: fit-content;
   top: 90px;
   border-radius: 30px;
   transition: transform 0.3s ease-in-out;
