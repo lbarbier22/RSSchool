@@ -5,26 +5,88 @@ document.addEventListener('DOMContentLoaded', function () {
     divComment.style.display = 'none';
 
     const submitButton = document.querySelector('.div_submit button');
+    const modal = document.getElementById('custom-modal');
+    const modalClose = document.getElementById('close-modal');
     let formState = 0;
+
+    function openModal(message) {
+        document.getElementById('modal-message').textContent = message;
+        modal.style.display = 'block';
+    }
+
+    function closeModal() {
+        modal.style.display = 'none';
+    }
+
+    function checkRequiredFields() {
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const age = document.getElementById('age');
+
+        let isValid = true;
+        let errorMessage = '';
+
+        if (!name.value.trim()) {
+            errorMessage += 'Veuillez entrer votre nom.\n';
+            isValid = false;
+        }
+
+        if (!email.value.trim()) {
+            errorMessage += 'Veuillez entrer votre email.\n';
+            isValid = false;
+        }
+
+        if (!age.value.trim()) {
+            errorMessage += 'Veuillez entrer votre âge.\n';
+            isValid = false;
+        }
+
+        if (!isValid) {
+            openModal(errorMessage);
+        }
+
+        return isValid;
+    }
+
+    function areAllQuestionsAnswered() {
+        const questions = document.querySelectorAll('.question');
+        let allAnswered = true;
+
+        questions.forEach(function (question) {
+            const radios = question.querySelectorAll('input[type="radio"]');
+            const isAnswered = Array.from(radios).some(radio => radio.checked);
+            if (!isAnswered) {
+                allAnswered = false;
+            }
+        });
+
+        return allAnswered;
+    }
 
     submitButton.addEventListener('click', function (event) {
         event.preventDefault();
 
         if (formState === 0) {
-            document.getElementById('name').style.display = 'none';
-            document.getElementById('email').style.display = 'none';
-            document.getElementById('age').style.display = 'none';
+            if (checkRequiredFields()) {
+                document.getElementById('name').style.display = 'none';
+                document.getElementById('email').style.display = 'none';
+                document.getElementById('age').style.display = 'none';
 
-            document.getElementById('label-name').style.display = 'none';
-            document.getElementById('label-email').style.display = 'none';
-            document.getElementById('label-age').style.display = 'none';
+                document.getElementById('label-name').style.display = 'none';
+                document.getElementById('label-email').style.display = 'none';
+                document.getElementById('label-age').style.display = 'none';
 
-            formulaire.style.display = 'block';
-            divComment.style.display = 'block';
+                formulaire.style.display = 'block';
+                divComment.style.display = 'block';
 
-            formState = 1;
-
+                formState = 1;
+            }
         } else if (formState === 1) {
+            if (!areAllQuestionsAnswered()) {
+                openModal("Veuillez répondre à toutes les questions avant de soumettre.");
+                return;
+            }
+
             let totalQuestions = 0;
             let totalOui = 0;
 
@@ -51,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 grade = 'E';
             }
 
-            const logoSrc = `logo_${grade}`; // Chemin de l'image
+            const logoSrc = `logo_${grade}`;
 
             document.body.innerHTML = `
                 <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
@@ -66,4 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
             formState = 2;
         }
     });
+
+    modalClose.addEventListener('click', closeModal);
 });
