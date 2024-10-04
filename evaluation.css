@@ -222,6 +222,34 @@ h1 {
     cursor: pointer;
 }
 
+/* Conteneur parent pour centrer le bloc */
+.text-explication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto; /* Remplit toute la hauteur de l'écran */
+    background-color: #FDF4C7; /* Arrière-plan du bloc */
+    padding: 20px;
+    border-radius: 10px;
+    color: #2B421F;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Largeur maximale pour ne pas trop étaler le bloc */
+    margin: auto; 
+    text-align: justify;
+    font-weight: bolder;
+}
+
+/* Ajustement du texte */
+.text-explication p {
+    margin: 0;
+}
+
+.text-explication p br {
+    margin-bottom: 10px;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

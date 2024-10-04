@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <img src="img/${logoSrc}.png" alt="Logo ${grade}" style="width: 200px; height: auto;"/>
                     <p>Merci d'avoir complété l'évaluation.</p>
                     <button onclick="window.location.reload();" style="padding: 10px 20px; font-size: 16px; background-color: #04AA6D; color: white; border: none; border-radius: 5px; cursor: pointer;">Réessayer</button>
+                    <button onclick="window.location.href='index.html#contact';" style="padding: 10px 20px; font-size: 16px; background-color: #04AA6D; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Nous contacter</button>
                 </div>
             `;
 
